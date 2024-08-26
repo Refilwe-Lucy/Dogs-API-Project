@@ -2,7 +2,7 @@ import React from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import WelcomePage from "./Component/WelcomePage"
 import Home from "./Pages/Home"
-import SingleDog from "./Pages/singleDog"
+import SingleDog from "./Pages/SingleDog"
 
 function App() {
   
