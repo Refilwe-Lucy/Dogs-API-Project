@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
-export default function SingleDog() {
+const  SingleDog = () => {
     const [dog, setDog] = useState(null);
     const { name } = useParams();
 
@@ -70,5 +70,6 @@ export default function SingleDog() {
         </>
     );
 }
+export default SingleDog
 
 
