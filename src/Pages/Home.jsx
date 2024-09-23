@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Hero from '../Component/Hero';
+import Footer from '../Component/footer';
+
+
 
 export default function Home() {
     const [dogs, setDogs] = useState([]);
@@ -69,23 +73,20 @@ export default function Home() {
     };
 
     return (
-        <>
+       <>
+       <Hero/>
             {!dogs.length ? (
-                <h1 className="flex items-center justify-center text-slate-800 text-center px-5 text-3xl h-screen">
+                <h1 className=" flex items-center justify-center text-slate-800 text-center px-5 text-3xl h-screen">
                     Loading...
                 </h1>
             ) : (
+              
                 <section className="p-8 max-w-7xl mx-auto">
                     <div className="text-center">
-                        <h1 className="flex items-center justify-center text-white text-center px-5 text-2xl font-bold lg:text-2xl">
+                        <h1 className=" mt-10 flex items-center justify-center text-gray-400 text-center px-5 text-2xl font-bold lg:text-3xl">
                             The Dog App
                         </h1>
-                        <p className="my-8 text-white">
-                            This application is powered by{' '}
-                            <a href="https://thedogapi.com" className="text-indigo-100 underline active:text-orange-400">
-                                The Dog API
-                            </a>
-                        </p>
+                      
                         <form className="max-w-xl mx-auto " onSubmit={(e) => e.preventDefault()}>
                             <input
                                 type="text"
@@ -94,7 +95,7 @@ export default function Home() {
                                 placeholder = "Search for a dog" 
                                 value={searchQuery}
                                 onChange={handleSearchChange}
-                                className="bg-pink-500 py-3 rounded shadow w-full placeholder-padding"
+                                className="bg-pink-500 py-3 rounded mt-5 shadow w-full placeholder-padding"
                             />
                         </form>
                     </div>
@@ -136,9 +137,13 @@ export default function Home() {
                             Next &gt;
                         </button>
                     </div>
+
+                    
                 </section>
+               
             )}
-        </>
+             <Footer/>
+    </>
     );
 }
 

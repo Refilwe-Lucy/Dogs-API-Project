@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
+import Hero from "../Component/Hero";
+import Footer from "../Component/footer";
 
 const  SingleDog = () => {
     const [dog, setDog] = useState(null);
@@ -31,7 +33,8 @@ const  SingleDog = () => {
 
     return (
         <>
-            <section className="max-w-5xl mx-auto p-10 flex items-center justify-center h-screen">
+        <Hero/>
+            <section className="max-w-6xl mx-auto p-10 flex items-center justify-center h-screen">
                 {dog ? (
                     <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2 md:place-items-center" >
                         <article>
@@ -50,9 +53,9 @@ const  SingleDog = () => {
                             )}
                         </article>
                         <article className="mt-4">
-                            <h1 className="text-3xl font-bold text-white mb-8 lg:text-3xl">{dog.name}</h1>
+                            <h1 className="text-3xl font-bold text-black mb-8 lg:text-3xl">{dog.name}</h1>
                             {dog.description && <p className="mt-2 text-slate-400 mb-8 text-sm lg:text-base leading-loose lg:leading-relaxed">{dog.description}</p>}
-                            <ul className="text-sm text-white leading-loose lg:text-base lg:leading-relaxed">
+                            <ul className="text-sm text-black leading-loose lg:text-base lg:leading-relaxed">
                                 <li><strong>Bred For:</strong> {dog.bred_for}</li>
                                 <li><strong>Height:</strong> {dog.height.metric} cm</li>
                                 <li><strong>Breed Group:</strong> {dog.breed_group}</li>
@@ -67,6 +70,7 @@ const  SingleDog = () => {
                     <h2 className="text-xl text-center">No dog found with the name "{name}"</h2>
                 )}
             </section>
+            <Footer/>
         </>
     );
 }

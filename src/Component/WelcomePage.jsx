@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+//import Hero from './Hero';
 
 export default function WelcomePage() {
     return (
+        <>
+    
         <section className="relative flex flex-col items-center justify-center h-screen bg-black overflow-hidden">
             <video
                 className="absolute top-0 left-0 w-full h-full object-cover"
@@ -23,6 +26,7 @@ export default function WelcomePage() {
                 </Link>
             </div>
         </section>
+        </>
     );
 }
 
