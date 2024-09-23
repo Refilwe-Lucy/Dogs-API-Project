@@ -91,10 +91,10 @@ export default function Home() {
                                 type="text"
                                 name="search"
                                 id="search"
-                                placeholder ="Search for a dog"
+                                placeholder = "Search for a dog" 
                                 value={searchQuery}
                                 onChange={handleSearchChange}
-                                className="bg-pink-500 py-3 rounded shadow w-full"
+                                className="bg-pink-500 py-3 rounded shadow w-full placeholder-padding"
                             />
                         </form>
                     </div>

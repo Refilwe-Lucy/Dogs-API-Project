@@ -8,3 +8,7 @@ body{
 input::placeholder {
   color: white; 
 }
+.placeholder-padding::placeholder {
+  padding-left: 10px; 
+  color: #ffffff; 
+}
