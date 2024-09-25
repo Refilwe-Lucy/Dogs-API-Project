@@ -85,7 +85,7 @@ export default function Home() {
               
                 <section className="p-8 max-w-7xl mx-auto">
                     <div className="text-center">
-                        <h1 className=" mt-10 flex items-center justify-center text-gray-500 text-center px-5 text-2xl font-bold lg:text-3xl font-poppins">
+                        <h1 className=" mt-10 flex items-center justify-center text-pink-500 text-center px-5 text-2xl lg:text-3xl font-montserrat  ">
                         BarkHub App
                         </h1>
                       

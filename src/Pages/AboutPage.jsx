@@ -22,7 +22,8 @@ const AboutPage = () =>{
               you’ll find a wealth of information and a supportive community here. Let’s celebrate the incredible bond between humans and
               dogs together!</p>
                     </div>
-                    <ButtonPage label={"click Me"} iconURL={<FaRegArrowAltCircleRight />
+                    <ButtonPage label={"Learn More"}
+                     iconURL={<FaRegArrowAltCircleRight />
 }/>
 
                 
