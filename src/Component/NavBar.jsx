@@ -7,14 +7,17 @@ const NavBar = () => {
         <img src={Logo} alt= "logo" className="w-20 h-20"/>
     </div>
     <ul className="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-8">
-    <li className="mx-10">
-            <a href="/home" className="text-xl mr-10 text-pink-500 hover:text-pink-300">Home</a>
+    <li className="mx-10 relative group">
+            <a href="/home" className="text-xl text-pink-500 inline-block relative">Home</a>
+            <span className="absolute left-0 bottom-0 h-[3px] w-full bg-pink-500 scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
         </li>
-        <li className="mx-10 bg-pink">
-            <a href="https://www.purina.co.uk/find-a-pet/dog-breeds" className="text-xl mr-10 text-pink-500 hover:text-pink-300">About</a>
+        <li className="mx-10 relative group">
+            <a href="about" className="text-xl text-pink-500 inline-block relative">About</a>
+            <span className="absolute left-0 bottom-0 h-[3px] w-full bg-pink-500 scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
         </li>
-        <li className="mx-10">
-            <a href="#" className="text-xl mr-10 text-pink-500 hover:text-pink-300">Contact Us</a>
+        <li className="mx-10 relative group">
+            <a href="#" className="text-xl text-pink-500 inline-block relative">Contact Us</a>
+            <span className="absolute left-0 bottom-0 h-[3px] w-full bg-pink-500 scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
         </li>
     </ul>
    </nav>

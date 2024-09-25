@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import WelcomePage from "./Component/WelcomePage"
 import Home from "./Pages/Home"
 import SingleDog from "./Pages/singleDog"
+import AboutPage from "./Pages/AboutPage"
 
 function App() {
   
@@ -14,6 +15,8 @@ function App() {
      <Route path="/" element={<WelcomePage />} />
       <Route path="/home" element={<Home />}></Route>
       <Route path="/dog/:name" element={<SingleDog />}></Route>
+      <Route path="/about" element={<AboutPage />}></Route>
+      
      </Routes>
      </Router>
    
