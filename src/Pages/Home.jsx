@@ -83,8 +83,8 @@ export default function Home() {
               
                 <section className="p-8 max-w-7xl mx-auto">
                     <div className="text-center">
-                        <h1 className=" mt-10 flex items-center justify-center text-gray-400 text-center px-5 text-2xl font-bold lg:text-3xl">
-                            The Dog App
+                        <h1 className=" mt-10 flex items-center justify-center text-gray-500 text-center px-5 text-2xl font-bold lg:text-3xl font-poppins">
+                        BarkHub App
                         </h1>
                       
                         <form className="max-w-xl mx-auto " onSubmit={(e) => e.preventDefault()}>
@@ -95,7 +95,7 @@ export default function Home() {
                                 placeholder = "Search for a dog" 
                                 value={searchQuery}
                                 onChange={handleSearchChange}
-                                className="bg-pink-500 py-3 rounded mt-5 shadow w-full placeholder-padding"
+                                className="bg-pink-500 py-3 rounded mt-10 shadow w-full placeholder-padding"
                             />
                         </form>
                     </div>
