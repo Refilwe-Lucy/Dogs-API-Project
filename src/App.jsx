@@ -6,6 +6,7 @@ import SingleDog from "./Pages/singleDog"
 import AboutPage from "./Pages/AboutPage"
 import ContactForm from "./Component/ContactForm"
 import SuccessPage from "./Pages/SuccessPage"
+import PrivacyPage from "./Pages/PrivacyPage"
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
       <Route path="/about" element={<AboutPage />}></Route>
       <Route path="/contact" element={<ContactForm />}></Route>
       <Route path="/success" element={<SuccessPage />}></Route>
+      <Route path="/privacy" element={<PrivacyPage />}></Route>
       
      </Routes>
      </Router>

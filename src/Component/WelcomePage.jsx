@@ -23,11 +23,11 @@ export default function WelcomePage() {
             </video>
          
             <div className="relative z-10 text-center text-white">
-                <h1 className="text-5xl font-bold mb-4">Welcome to Our Dogs Page</h1>
+                <h1 className="text-5xl font-bold mb-4">Welcome to Our BarkHub App Page</h1>
                 <p className="mb-10 text-2xl">Explore different dog breeds and find your favorite one!</p>
                 <Link to="/home">
                     <button className="px-4 py-4 bg-pink-500 text-white rounded hover:bg-pink-800">
-                        Search for a Dog
+                        Search for a breed
                     </button>
                 </Link>
             </div>

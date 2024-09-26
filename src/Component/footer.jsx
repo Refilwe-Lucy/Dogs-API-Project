@@ -12,12 +12,13 @@ const Footer = () => {
             <a href="https://www.purina.co.uk/find-a-pet/dog-breeds" className="hover:underline me-4 md:me-6">About</a>
         </li>
         <li>
-            <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
+            <a href="privacy" className="hover:underline me-4 md:me-6">Privacy Policy</a>
         </li>
        
         <li>
-            <a href="#" className="hover:underline"><FaWhatsapp />
-            </a>
+            <p className="hover:underline flex justify-center items-center gap-3">You can also whatsApp us<a href="https://wa.me/0606827950
+"><FaWhatsapp className="h-5 w-5 "/></a>
+            </p>
         </li>
     </ul>
     </div>

@@ -33,7 +33,7 @@ const  SingleDog = () => {
 
     return (
         <>
-        <Hero/>
+        <Hero dogName={dog ? dog.name : ''}/>
             <section className="max-w-6xl mx-auto p-10 flex items-center justify-center h-screen">
                 {dog ? (
                     <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2 md:place-items-center" >
@@ -53,7 +53,7 @@ const  SingleDog = () => {
                             )}
                         </article>
                         <article className="mt-5">
-                            <h1 className="text-3xl font-bold text-black mb-8 lg:text-3xl">{dog.name}</h1>
+                            <h1 className="text-3xl font-lightbold text-pink-500 mb-8 lg:text-3xl">{dog.name}</h1>
                             {dog.description && <p className="mt-2 text-slate-400 mb-8 text-sm lg:text-base leading-loose lg:leading-relaxed">{dog.description}</p>}
                             <ul className="text-sm text-black leading-loose lg:text-base lg:leading-relaxed">
                                 <li><strong>Bred For:</strong> {dog.bred_for}</li>

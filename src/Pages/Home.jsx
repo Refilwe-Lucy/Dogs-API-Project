@@ -94,7 +94,7 @@ export default function Home() {
                                 type="text"
                                 name="search"
                                 id="search"
-                                placeholder = "Search for a dog" 
+                                placeholder = "Search for a breed" 
                                 value={searchQuery}
                                 onChange={handleSearchChange}
                                 className="bg-pink-500 py-3 rounded mt-10 shadow w-full placeholder-padding"
