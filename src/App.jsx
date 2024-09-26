@@ -5,6 +5,7 @@ import Home from "./Pages/Home"
 import SingleDog from "./Pages/singleDog"
 import AboutPage from "./Pages/AboutPage"
 import ContactForm from "./Component/ContactForm"
+import SuccessPage from "./Pages/SuccessPage"
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
       <Route path="/dog/:name" element={<SingleDog />}></Route>
       <Route path="/about" element={<AboutPage />}></Route>
       <Route path="/contact" element={<ContactForm />}></Route>
+      <Route path="/success" element={<SuccessPage />}></Route>
       
      </Routes>
      </Router>
