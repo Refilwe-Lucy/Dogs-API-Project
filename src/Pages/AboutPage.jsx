@@ -1,5 +1,6 @@
 import Hero from "../Component/Hero"
 //import { arrowRight } from "../assets/icons/"
+//import DogCards from "../Component/DogCards";
 import ButtonPage from "../Component/ButtonPage"
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import Footer from "../Component/footer"
@@ -22,6 +23,7 @@ const AboutPage = () =>{
               you’ll find a wealth of information and a supportive community here. Let’s celebrate the incredible bond between humans and
               dogs together!</p>
                     </div>
+                    
                     <ButtonPage label={"Learn More"}
                      iconURL={<FaRegArrowAltCircleRight />
 }/>
