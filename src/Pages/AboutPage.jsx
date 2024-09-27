@@ -22,7 +22,9 @@ const AboutPage = () =>{
               Whether you're considering bringing a new furry friend into your home or simply love learning about dogs,
               you’ll find a wealth of information and a supportive community here. Let’s celebrate the incredible bond between humans and
               dogs together!</p>
+             
                     </div>
+                   
                     
                     <ButtonPage label={"Learn More"}
                      iconURL={<FaRegArrowAltCircleRight />

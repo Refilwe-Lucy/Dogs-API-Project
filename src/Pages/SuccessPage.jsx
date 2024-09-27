@@ -16,7 +16,7 @@ const SuccessPage = () => {
         <>
         <Hero/>
         <div className="flex flex-col items-center justify-center h-screen bg-white">
-            <div className="flex items-center justify-center w-20 h-20 border-2 border-pink-500 rounded-full text-black mb-4">
+            <div className="flex items-center justify-center w-20 h-20 border-2 border-pink-500 rounded-full text-black mb-4 animate-bounce-up-down">
             <AiOutlineCheck className="w-10 h-10 px-2 py-2" />
             </div>
             

@@ -9,15 +9,15 @@ const Footer = () => {
     </span>
     <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>
-            <a href="https://www.purina.co.uk/find-a-pet/dog-breeds" className="hover:underline me-4 md:me-6">About</a>
+            <a href="/about" className="hover:underline me-4 md:me-6">About</a>
         </li>
         <li>
             <a href="privacy" className="hover:underline me-4 md:me-6">Privacy Policy</a>
         </li>
        
         <li>
-            <p className="hover:underline flex justify-center items-center gap-3">You can also whatsApp us<a href="https://wa.me/0606827950
-"><FaWhatsapp className="h-5 w-5 "/></a>
+            <p className="hover:underline flex justify-center items-center gap-3">You can also whatsApp us<a href="https://wa.me/0606827950 
+" target="_blank" rel="noopener noreferrer"><FaWhatsapp className="h-5 w-5 "/></a>
             </p>
         </li>
     </ul>

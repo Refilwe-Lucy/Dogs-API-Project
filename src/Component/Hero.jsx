@@ -10,7 +10,7 @@ const Hero = ({dogName}) =>{
       <header className="bg-white flex flex-col items-center ">
           {dogName && (
               <div className="text-pink-500 absolute z-10 mt-40">
-                  <h1 className="text-3xl font-bold text-center ">
+                  <h1 className="text-6xl font-lightbold text-center ">
                       {dogName}
                   </h1>
               </div>

@@ -41,6 +41,53 @@ const Carousel = () => {
 };
 
 export default Carousel;
+
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+const DogCard = () => {
+    const slides = [
+        "dogImage1.png",
+        "dogImage2.png",
+        "dogImage3.png",
+    ];
+
+    return (
+        <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
+            pagination={{
+                clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+        >
+            {slides.map((slide, index) => (
+                <SwiperSlide key={index}>
+                    <img 
+                        src={`/images/${slide}`} 
+                        alt={`Dog ${index + 1}`} 
+                        className="w-full h-full object-cover"
+                    />
+                </SwiperSlide>
+            ))}
+        </Swiper>
+    );
+};
+
+export default DogCard;
 */
+
+
+
 
 
