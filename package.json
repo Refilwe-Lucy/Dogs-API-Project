@@ -2,6 +2,7 @@
   "name": "dog",
   "private": true,
   "version": "0.0.0",
+  "proxy": "https://api.web3forms.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
